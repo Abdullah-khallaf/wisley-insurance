@@ -1,0 +1,120 @@
+@import './variables';
+@import './_functions';
+@import './navbar';
+@import './main-section';
+@import './linkssection';
+@import './footer';
+
+//main style;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin : 0;
+    padding: 0;
+    @include desktop{
+            overflow-x: hidden;
+        }
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto 0 auto;
+    width: 100%;
+    
+}
+a {
+    text-decoration: none;
+    color: $mainColor;
+    
+}
+
+.hr {
+    height:1px;
+    background-color: $mainColor;
+    width:80%;
+    margin:2% auto 5% auto;   
+}
+// the popup for all pages.
+.pop-up{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 9999;
+    background-color:rgba(0, 0, 0, 0.397);
+    display:none;
+    .inner{
+        background-color:$mainColor2;
+        @include flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width:50%;
+        height: 80%;
+        position: fixed;
+        top:10%;
+        left:25%;
+        .hr{
+            margin-bottom: 0px;
+        }
+        .hello{
+            @include flex;
+            flex-direction: row;
+            width:100%;
+            img{
+                height: 80px;
+                width:auto;
+                border-radius: 50%;
+                margin-right:10px;
+            }
+            p{
+                font-size:22px;
+                color:$mainColor;
+                text-align: left;
+            }
+        }
+        h2{
+            font-size: 24px;
+            font-weight:bold;
+            color:$mainColor;
+            text-align: center;
+            margin: 5% 0% 3% 0%;
+            
+        }
+        button{
+            @include button(200px,25px);
+            margin-bottom: 10px;
+            border-radius: 20px;
+            font-size:12px;
+            &:hover{
+                @include btnhover;
+            }
+        }
+
+        @include tap{
+           .hello{
+            p{
+                font-size:14px;
+            }
+           }
+        }
+    }
+}
+#General-Insurance{
+    .inner{
+        .button-types{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width:60%;
+            @include tap{
+                width:80%;
+            }
+            @include tap2{
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
+// end popup for all pages.

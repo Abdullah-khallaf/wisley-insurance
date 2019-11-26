@@ -1,0 +1,35 @@
+// start links section for all pages.
+#links{
+    div{
+        @include flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+        color:$mainColor;
+        font-size:14px;
+        .logo-coloumn{
+            img{
+                height:100px;
+            }
+        }
+        a{
+            margin-bottom: 5%;
+            text-align: center;
+        }
+        div{
+            flex-direction: column; 
+         .social{
+             margin-top:10%;
+             flex-direction: row;
+             width:40%;
+
+                img{
+                    height:30px;
+                    margin: 0%;
+            }
+         }
+        }
+    }
+    margin-bottom: 7%;
+}
+// end links section

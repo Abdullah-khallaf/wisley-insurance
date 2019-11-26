@@ -1,0 +1,1012 @@
+// start of the first section in page one about us
+#about-us{
+
+    div{
+        @include flex;
+        flex-direction: column;
+        color:$mainColor;
+        h1{
+            font-size:30px;
+            text-align: center;
+            font-weight: bold; 
+        }
+        p{
+            font-size:32px;
+            color:#304161;
+            text-align: center;
+        }
+        .first-icons{
+            margin-top:10%;
+            @include flex;
+            flex-direction: row;
+            justify-content:space-around;
+            width:100%;
+                img{
+                    height: 50px;
+                }
+            }
+        
+        .spans{
+            @include flex;
+            flex-direction: row;
+            justify-content:space-around;
+            width:100%;
+          
+        }
+        .options{
+            margin-top:40px;
+            @include flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 70%;
+           
+            button{
+                @include button (300px,50px);
+                color:$maincolor3;
+                font-size:22px;
+                &:hover{
+                    @include btnhover;
+                }
+            }
+            @include tap{
+                flex-direction: column;
+                button{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        i{
+            font-size:70px;
+            color:$mainColor;
+            margin-top:40px;
+            cursor: pointer;
+        }
+    }
+}
+// End of the first section in page one about us.
+
+// Start Of the first section in page one our clients.
+#our-clients{
+    div{
+        @include flex;
+        flex-direction: column;
+        color:$mainColor;
+        h2{
+            font-size:30px;
+            text-align: center;
+            font-weight: bold; 
+        }
+        p{
+            font-size:26px;
+            color:#304161;
+            text-align: center;
+        }
+        .clients{
+            margin-top:10%;
+            @include flex;
+            flex-direction: row;
+            justify-content:space-around;
+            width:100%;
+                img{
+                    height: 150px;
+                }
+                @include tap{
+                    flex-direction: column;
+                }
+            
+            }
+        }
+    .feedbacks{
+        margin-top:10%;
+        @include flex;
+        flex-direction: row;
+        color:$mainColor;
+        i{
+            font-size: 90px;
+            cursor: pointer;
+        }
+        div{
+            @include flex;
+            flex-direction: column;
+            justify-items: center;
+        p{
+            font-size:36px;
+            font-weight: 400;
+            text-align: center;
+            font-style: italic;
+            .comma{
+                font-family: serif;
+                font-size:60px;
+                font-weight: bolder;
+            }
+            span{
+                font-size:20px;
+            }
+        }
+    }
+    }
+}
+// end section two our clients
+
+//start section 3 our services
+
+#our-services{
+    div{
+        @include flex;
+        flex-direction: column;
+        color:$mainColor;
+        h2{
+            font-size:30px;
+            text-align: center;
+            font-weight: bold; 
+        }
+        p{
+            font-size:24px;
+            color:$mainColor;
+            text-align: center;
+        }
+        .table{
+            @include flex;
+            flex-direction: column;
+            margin-top:5%;
+            div{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width:100%;
+            margin-bottom: 20px;
+            .td-paragraph{
+                p{
+                    font-size:18px;
+                    text-align:left;
+                }
+                margin-right:5%;
+            }
+
+            .td{
+            flex-direction: column;
+                button{
+                    @include button (200px,30px);
+                    color:rgb(248, 236, 236);
+                    font-size:14px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        @include btnhover;
+                    }
+                }
+                img{
+                    height: 60px;
+                    margin-bottom: 10px;
+                }
+                
+              }
+            }
+        }
+        @include tap{
+            .table{
+                div{
+                    div{
+                        margin-right:20px;
+                    }
+                    .td-paragraph{
+                        font-size:16px;
+                    }
+                }
+            }
+        }
+        @include tap2{
+            h2{
+                font-size:30px;
+                text-align: center;
+            }
+            p{
+                font-size:22px;
+            }
+            .table{
+                div{
+                    flex-direction: column;
+                }
+            }
+            
+            .td-paragraph{
+                p{
+                    font-size:12px;
+                    text-align:center;
+                }
+                justify-content: center;
+            }
+        
+        }
+     }
+    }
+// end our-services section
+
+// start the partners section.
+#our-partners{
+    div{
+        h2{
+            font-size:30px;
+            text-align: center;
+            color: $mainColor;
+            margin-bottom: 5%;
+            font-weight: bold; 
+        }
+        div{
+         @include flex;
+         justify-content: space-between;
+         flex-direction:row; 
+            img{
+                height: 70px;
+
+            }
+            @include tap{
+                img{
+                    height: 50px;
+                }
+            }
+            @include tap2{
+                flex-direction: column;
+                img{
+                    height: 80px;
+                }
+            }
+        }        
+    }
+    margin-bottom: 10%;
+}
+// end of the partners section.
+
+// end page one
+
+// working on page two
+// working in info
+ #info{
+     margin-top:5%;
+     @include flex;
+     flex-direction: column;
+     h2{
+        font-size:36px;
+        text-align: center;
+        color: $mainColor;
+        margin-bottom: 5%;
+        font-weight: 400; 
+     }
+     p{
+        font-size:26px;
+        text-align: center;
+        color: $mainColor;
+        margin-bottom: 5%;
+        font-weight: 400; 
+     }
+     div{
+         margin-top:10%;
+         @include flex;
+         flex-direction: row;
+         justify-content: space-around;
+         width: 100%;
+         button{
+             @include button(300px,50px);
+             &:hover{
+                 @include btnhover;
+             }
+         }
+         @include tap{
+             button{
+                 @include button(200px,50px);
+             }
+            }
+             @include tap2{
+                flex-direction: column;
+                button{
+                    margin-bottom: 20px;
+                }
+         }
+     }
+ }
+ // end working on info.
+ 
+ // end page two.
+
+// working on page 3..
+// working on section help
+#help{
+    div{
+     @include flex;
+     flex-direction: column;
+     width:60%;
+        h3{
+            font-size:30px;
+            text-align: center;
+            color: $mainColor;
+        }
+        p{
+            font-size:22px;
+            text-align: center;
+            color: $mainColor; 
+        }
+    }
+}
+// end working on help.
+
+// start working on  help-type section.
+#help-type{
+    margin-top:5%;
+    .rounds{
+        @include flex;
+        flex-direction:  row;
+        justify-content: space-evenly;
+        div{
+            background-color:$mainColor;
+            color:$mainColor2;
+            width:70px;
+            height:70px;
+            border-radius: 50%;
+            @include flex;
+            justify-content: center;    
+            font-size:26px;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+                background-color:$divred;
+            }
+        }
+        .hr{
+            height:1px;
+            background-color: $mainColor;
+            width:20%;
+            margin: auto 0% auto 0%;
+        }
+    }
+    .form-type{
+        margin-top:10%;
+        .details{
+            form{
+                @include flex;
+                flex-direction: column;
+                input{
+                    @include input;
+                }
+                button{
+                    @include button(150px,50px);
+                    &:hover{
+                        @include btnhover;
+                    }
+                }
+            }
+        }
+        .sorts{
+            @include flex;
+            flex-direction: column;
+            table{
+                tr{
+                    td{
+                        width:100px;
+                        color:$mainColor;
+                        height: 50px;
+                        border: solid 1px $tableborder;
+                        padding: 0px;
+                        text-align: center;
+                        input{
+                         width:100px;   
+                         height: 60px;
+                         text-align: center;
+                         color:$mainColor;
+                         margin: 0px;
+                         border:none;
+                         @include desktop{
+                             height: 80px;;
+                         }
+                        }
+                    }
+                    .table-title{
+                        background-color:$mainColor;
+                        text-align:center;
+                        color:$tableborder;
+                        font-size:18px;
+                        width:200px; 
+                    }
+                }
+            }
+            p{
+                color:$divred;
+                font-size:28px;
+            }
+            h6{
+                color: $divred;
+                font-size:22px;
+            }
+            button{
+                margin-top:5%;
+                @include button(150px,50px);
+                &:hover{
+                    @include btnhover;
+                }
+            }
+        }
+        .plans{
+            @include flex;
+            flex-direction: column;
+            table{
+            .titels{
+                    td{
+                        background-color:$mainColor;
+                        text-align:center;
+                        color:$tableborder;
+                        font-size:18px;
+                        width:150px;
+                        height: 60px;
+                        border:solid 2px $tableborder;
+                    }
+            }
+                tr{
+                    width:100%;
+                    td{
+                        text-align: center;
+                        font-size:18px;
+                        width:150px;
+                        color:$mainColor;
+                        border:solid 2px $mainColor;
+                        padding:0px;
+                        input{
+                            height:80px;
+                            text-align: center;
+                            font-size:18px;
+                            width:50px;
+                            color:$mainColor;
+                            margin:0px;
+                            border:none;
+                            outline: none;
+                        }
+                    }
+                }
+        }
+        div{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:70%;
+            button{
+                margin-top:5%;
+                @include button(250px,50px);
+                border-radius: 15px;
+                &:hover{
+                    @include btnhover;
+                }
+            }
+            @include tap{
+                flex-direction: column;
+            }
+        }
+    }
+        
+    }
+}
+// end working on help section
+
+// end working on page 3.
+
+// start working on page 4
+// working on section search companies.
+#search-companies{
+    div{
+        @include flex;
+        flex-direction: column;
+        form{
+            @include flex;
+            flex-direction: column;
+            h2{
+                font-size:30px;
+                text-align: center;
+                color: $mainColor;
+                margin-bottom: 5%;
+                font-weight: bold; 
+            }
+            select{
+                @include input;
+                font-size:20px;
+                &:focus{
+                    color:$mainColor;
+                }
+            }
+            div{
+                @include flex;
+                flex-direction: row;
+                justify-content: space-between;
+                button{
+                    @include button(150px,40px);
+                    font-size: 14px;
+                    &:hover{
+                        @include btnhover;
+                    }
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+// end working on searc-companies 
+
+// start working on featured partners 
+#featured-partners{
+   margin-top:10%;
+    @include flex;
+    flex-direction: column;
+    div{
+        @include flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5%;
+        div{
+            @include flex;
+            flex-direction: column;
+            img{
+                height: 100px;
+                width:auto;
+            }
+            p{
+                font-size:16px;
+                text-align: center;
+                color:$mainColor;
+                width:90%;
+            }
+            a{
+                text-decoration: underline;     
+            }
+        }
+        @include tap{
+            flex-direction: column;
+        }
+    }
+}
+//end working on featured partners section.
+
+// end working on page 4.
+
+// start working on page 5.
+//working on section services2.
+#services-2{
+    .services-2{
+        @include flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        img{
+            height: 300px;
+        }
+        h2{
+            font-size:36px;
+            text-align: left;
+            color: $mainColor;
+            font-weight: bold; 
+            margin-bottom: 5%;
+            @include tap2{
+                text-align: center;
+            }
+         }
+         p{
+            font-size:26px;
+            text-align: left;
+            color: $mainColor;  
+            width:80%;
+
+            @include tap2{
+                text-align: center;
+                width:100%;
+            }
+         }
+         @include tap2{
+             flex-direction: column;
+         }
+    }
+    .services-3{
+        margin-top: 5%;
+        @include flex;
+        flex-direction: column;
+        .bleu-boxes{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:100%;
+            div{
+                height: 200px;
+                width:33%;
+                @include flex;
+                flex-direction: column;
+                background-color: $mainColor;
+                img{
+                    height: 120px;
+                    width:auto;
+                }
+                p{
+                    font-size: 26px;
+                    color: $mainColor2;
+                    text-align: center;
+                    @include tap2{
+                        font-size:20px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .services-description{
+        margin-top: 5%;
+        @include flex;
+        flex-direction: column;
+        div{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 2%;  
+            @include desktop{
+                flex-direction: column;
+            }
+            div{
+                @include flex;
+                flex-direction: column;
+                width: 30%;
+                @include desktop{
+                    width:100%;
+                }
+              
+                p{
+                    font-size:20px;
+                    text-align: center;
+                    color:$mainColor;
+                    
+                }
+                 button{
+                     margin-top:5%;
+                     @include button(300px,30px);
+                     font-size:12px;
+                     &:hover{
+                         @include btnhover;
+                     }
+                     @include desktop{
+                         margin-top:2%;
+                     }
+                 }
+            }
+
+        }
+    }
+    .our-vision{
+        @include flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color:$mainColor;
+        padding: 2% 0 2% 0;
+        div{
+            @include flex;
+            flex-direction: column;
+            img{
+                height:100px;
+                width:120px;
+                border-radius: 50%;
+            }
+            h2{
+                font-size:24px;
+                text-align: center;
+                color: #e8e8e8;
+                margin-bottom: 2%;
+                font-weight: bold; 
+            }
+            p{
+                font-size:14px;
+                text-align:center;
+                color:$mainColor2;
+                width:70%;
+            }
+        }
+    }
+    .first-person{
+        margin-top:4%;
+        @include flex;
+        flex-direction:column;
+        h2{
+            font-size:30px;
+            text-align: center;
+            color: $mainColor;
+            margin-bottom: 2%;
+            font-weight: bold; 
+        }
+        p{
+            font-size:16px;
+            text-align:center;
+            color:$mainColor;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom:2%;
+        }
+    }
+    margin-bottom:10%;
+}
+//end working on sevices2 section.
+//end working on page 5.
+
+//start working on page 6.
+//start working on send message section.
+#send-message{
+    div{
+        form{
+            @include flex;
+            flex-direction: column;
+            input{
+                @include input;
+            }
+            textarea{
+                width: 400px;
+                height:250px;
+                border-top:solid 7px $lasttable;
+                border-bottom:solid 7px $lasttable;
+                border-radius: 10px;
+                outline: none;
+            }
+             
+            button{
+                margin-top:2%;
+                @include button(300px,50px);
+                font-weight: bold;
+                border-radius: 20px;
+                &::hover{
+                    @include btnhover;
+                }
+            }
+        }
+    }
+    margin-bottom: 5%;
+}
+// end working on send message.
+// end working on page 6.
+
+// start working on page 7.
+//start working on Q-A section.
+#Q-A{
+    @include flex;
+    div{
+        @include flex;
+        flex-direction: column;
+        padding:0 2px 0 2px;
+        border:solid 2px $lasttable;
+        border-radius: 5px;
+        margin-bottom: 5%;
+       .q{
+            background-image: linear-gradient(white,rgba(71, 71, 71, 0.493));
+            height: 50;
+            padding:5px;
+            width:100%;
+            border-radius: 10px;
+            border:none;
+            font-size:24px;
+            color:$mainColor;  
+            margin-bottom: 3%;
+            cursor: pointer;
+            @include tap2{
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size:22px;
+            color:  #ccccccfb;
+            margin-bottom: 10%;
+            margin-top:2%;
+            width:90%;
+            text-align: left;
+            display: none;
+        }
+        
+    }
+}
+//end Q-A section.
+//end working on page 7.
+
+//start working on page 8.
+
+// working on work-withus section.
+#work-withUS{
+    @include flex;
+    flex-direction: column;
+    .work-withus{
+        @include flex;
+        flex-direction: column;
+        h3{
+            font-size:30px;
+            color: $mainColor;
+            text-align: center;
+            font-weight: 500;
+        }
+        p{
+            font-size:20px;
+            color: $mainColor;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 5%;
+        }
+        i{
+            font-size:72px;
+            color:$mainColor;
+            margin-top:5px;
+            margin-bottom: 10%;
+            cursor: pointer;
+        }
+    }
+    .current-vacancies{
+        @include flex;
+        flex-direction: column;
+        h3{
+            font-size:30px;
+            color: $mainColor;
+            text-align: center;
+            font-weight: 400;
+        }
+        span{
+            font-size:20px;
+            color: $mainColor;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 5%;
+        }
+        div{
+            @include flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div{
+                @include flex;
+                flex-direction: column; 
+                width: 100%;
+                margin:0px;
+                h3{
+                    font-size:20px;
+                    color: $mainColor;
+                    text-align: center;
+                    font-weight: 400;
+                }
+                p{
+                    font-size:18px;
+                    color: $mainColor;
+                    text-align: center;
+                    font-weight: 200;
+                    width:80%;
+                }
+            }
+            @include tap {
+                flex-direction: column;
+                div{
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+    .othercountries{
+        @include flex;
+        flex-direction: column;
+        margin-top:5%;
+        h3{
+            font-size:30px;
+            color: $mainColor;
+            text-align: center;
+            font-weight: 400;
+        }
+        p{
+            font-size:22px;
+            color: $mainColor;
+            text-align: center;
+            font-weight: 400;
+        }
+        div{
+            margin-top:2%;
+            @include flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width:100%;
+            div{
+                @include flex;
+                flex-direction: column; 
+                img{
+                    height:80px;
+                    width:auto;
+                    @include tap{
+                        height: 50px;
+                    }
+                    @include tap2{
+                        height: 80px;
+                    }
+                }
+                span{
+                    font-size:18px;
+                    color: $mainColor;
+                    text-align: center;
+                    font-weight: 400;
+                }
+            }
+            @include tap2{
+                flex-direction: column;
+            }
+        }
+    }
+    margin-bottom: 10%;
+}
+// end working on section work with us.
+// end working on page 8.
+
+// start working on page 9.
+
+// start working on the last table.
+#last-table{
+    @include flex;
+    flex-direction: column;
+        table{
+            tr{  
+                td{
+                    width:300px;
+                    height: 40px;
+                    color:$mainColor;
+                    text-align: center;
+                    border:1px solid $tableborder;
+                }
+                .t-head{
+                    background-color:$mainColor;
+                    color:$lasttable;
+                    font-size:18px;
+                    text-align :center;
+                }
+                .rotate{
+                    width:2%;
+                    
+                    p{
+                        writing-mode: vertical-rl;
+                        text-orientation:mixed;
+                        font-size:22px;
+                        font-weight: bold;
+                        margin-left:20%;
+                        transform: rotate(180deg);
+                        color:$mainColor;
+                        width:0%;  
+                        margin:0px;
+                    }
+                }
+            }
+            .empty{
+                height: 20px;
+                width:100%;
+                background-color: #b9b7b7;
+                border-right:solid 1px $tableborder;
+                border-left:solid 1px $tableborder;
+                td{
+                    border:none;
+                    height: 20px;
+                }
+            }
+            margin-bottom: 5%;
+        }
+    div{
+        @include flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        width:50%;
+        @include tap{
+            flex-direction: column;
+            button{
+                margin-bottom: 1%;
+            }
+        }
+        button{
+            @include button(250px,30px);
+            font-size:18px;
+            border-radius: 10px;
+            &:hover{
+                @include btnhover;
+                
+            }
+            i{
+                margin-right:10px;
+                
+            }
+        }
+    }
+    margin-bottom: 5%;
+}
+// end working on last table .
+// end working on the website.

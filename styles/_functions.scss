@@ -1,0 +1,71 @@
+$mainColor : #20355d;
+$mainColor2 : #ffffff;
+
+// second colors
+$btncolor : #20355d;
+$divred : #b92d2d;
+$tableborder: #666666;
+$lasttable: #cccccc;
+// 
+@mixin  flex  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin button ($width , $height) {
+
+    background-color: $mainColor;
+    width : $width;
+    height: $height;
+    color: $mainColor2 ;
+    font-weight: bold;
+    font: 20px Sans-serif;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 1px 3px 0px (0,0,0,.5);
+    display: inline-block;
+    @include flex();
+}
+
+@mixin btnhover {
+
+        background-color:rgb(8, 22, 56);
+        box-shadow: 2px 1px 4px 1px black;
+}
+@mixin input{
+    padding-left:10px;
+    height:60px;
+    width:400px;
+    font-size:18px;
+    color: #ccccccfb;
+    border-radius: 5px;
+    border: solid 1px $lasttable;
+    font-size: 18px;
+    box-shadow: 0px 3px 4px -3px #0000004a;
+    outline: none;
+    margin-bottom: 20px;
+    &:focus{
+        box-shadow: 1px 3px 4px -3px #0000004a;
+        outline: $mainColor;
+        color: rgb(29, 28, 28);
+    }
+}
+@mixin desktop {
+    @media (max-width : #{$desktop}){
+        @content;
+    }
+}
+@mixin tap {
+    @media(max-width : #{$tap}){
+        @content;
+    }
+}
+@mixin tap2{
+    @media(max-width : #{$tap2}){
+        @content;
+    }
+}
+
+
+
+

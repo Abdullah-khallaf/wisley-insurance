@@ -1,0 +1,96 @@
+
+nav{
+    color:#20355d;
+    .logo{
+        height:100px;
+        width:auto;
+        margin-left:-20px;
+        
+    }
+    div{
+        @include flex;
+        flex-direction:row;
+        ul{
+            list-style-type: none;
+            margin-top:45px;
+            font-size:22px;
+            li{
+                display: inline-block;  
+                margin-right: 20px;
+
+                div{
+                    margin-left:60px;
+                    img{
+                        width:auto;
+                        height:30px;
+                        margin-right: 20px;
+                    }
+                    button{
+                        @include button (160px,35px);
+                        display:inline-block;
+                        margin-right: 20px;
+                        &:hover{
+                            @include btnhover();
+                        }
+                    }
+                }
+            }
+           
+        }
+        
+        .burger{
+            display: none;
+        }
+
+        @include desktop{
+            ul{
+                display: none;
+                li{
+                    opacity:0;
+                    margin: 5% 0 5% 0;
+                    div{
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+            .burger{
+                display: block;
+                margin-top: 30px;
+                font-size:28px;
+                cursor: pointer;
+                margin-left: 50%;
+            }
+            .response{
+                background-color: #fff;
+                position:absolute;
+                right:0px;
+                top:6vh;
+                height:94vh;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                width:100%;
+                transform: translateX(100%);
+                transition: transform .5s ease-in;
+                box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.342);
+            }
+
+            .nav-active{
+               transform: translateX(0%);
+            }
+
+            @keyframes navlinksfade {
+                from{
+                    opacity: 0;
+                    transform: translateX(50px);
+                }
+                to{
+                    opacity:1;
+                    transform: translateX(0px);
+                }
+            }
+        }
+    }
+}
